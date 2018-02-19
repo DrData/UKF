@@ -40,15 +40,13 @@ int main()
 	// Create an Unscented Kalman Filter Fusion instance
 	KF::SensorFusion USKFusion(KF::KFType::eUKF);
 
-	bool bFromFile = true;
+	bool bFromFile = false;
 	if (bFromFile)
 	{
 		ProcessToFile();
 	}
 	else
 	{
-
-
 		// used to compute the RMSE later
 		Tools tools;
 		vector<VectorXd> estimations;
@@ -194,7 +192,7 @@ int main()
 		});
 
 		int port = 4567;
-		if (h.listen(port))
+		if (h.listen("127.0.0.1", port))
 		{
 			std::cout << "Listening to port " << port << std::endl;
 		}
