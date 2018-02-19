@@ -1,10 +1,10 @@
 #pragma once
-
 #include "measurement_package.h"
 #include "Eigen/Dense"
 #include <vector>
 #include <string>
 #include <fstream>
+#include "StateVector.h"
 
 using Eigen::MatrixXd;
 using Eigen::VectorXd;
