@@ -36,7 +36,7 @@ UKF::UKF(StateVector *psv) : _pSV(psv)
 	//Process noise standard deviation yaw acceleration in rad/s^2
 	std_yawdd_squared_ = std_yawdd_ * std_yawdd_;
 
-	///* State dimension
+	// State dimension
 	n_x_ = psv->size();
 	n_sig_pts_ = 2 * n_x_ + 1;
 

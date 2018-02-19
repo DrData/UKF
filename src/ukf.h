@@ -1,6 +1,5 @@
 #pragma once
 
-#include "IKalmanFilter.h"
 #include "measurement_package.h"
 #include "Eigen/Dense"
 #include <vector>

@@ -15,12 +15,6 @@ namespace KF
 			x_.fill(0);
 
 			P_ = MatrixXd::Identity(ndim, ndim);
-			// initial state vector
-			//x_ = VectorXd(5);
-
-			// initial covariance matrix
-			//P_ = MatrixXd(5, 5);
-
 		}
 
 		VectorXd x_;
